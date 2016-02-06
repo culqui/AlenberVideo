@@ -73,11 +73,16 @@
 
 				<!-- <div class="container"> -->
 
+				{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
 				<div class="form-group label-placeholder">
 					<div class="col-sm-3">
 						<input class="form-control input-sm no-border" type="text" placeholder="Codigo de requerimiento">
 					</div>
 				</div>
+
+				<form action="{% url 'order_publish' company.name %}" method="post">
+				{% csrf_token %}
 				<div class="frame">
 					<div class="form-horizontal">
 						<div class="row">
@@ -142,11 +147,11 @@
 								<!-- <template id="tecnic-template"> -->
 								<div class="form-group form-group-sm">
 									<div class="col-sm-6">
-										<input id="technical-specification-name" class="form-control no-border" type="texto" data-bind="attr: { value: $data.name, placeholder: 'Característica técnica ' + ( $index() + 1 )}">
+										<input id="technical-specification-name" class="form-control no-border" type="texto" data-bind="attr: { value: $data.name, placeholder: 'Característica técnica ' + ( $index() + 1 ), id: 'technical-specification-name-' + ( $index() )}">
 									</div>
 
 									<div class="col-sm-2">
-										<input id="technical-specification-value" class="form-control no-border" type="texto" placeholder="valor" data-bind="$data.value">
+										<input id="technical-specification-value" class="form-control no-border" type="texto" placeholder="valor" data-bind="attr: { id: 'technical-specification-value-' + ( $index() )}">
 									</div>
 								</div>
 								<!-- </template> -->
@@ -185,10 +190,10 @@
 							<!-- <template id="comercial-template"> -->
 							<div class="form-group form-group-sm">
 								<div class="col-sm-6">
-									<input data-bind="attr: { placeholder: 'Característica comercial ' + ( $index() + 1 )}" id="comercial-specification-name" class="form-control no-border" type="texto">
+									<input data-bind="attr: { placeholder: 'Característica comercial ' + ( $index() + 1 ), id: 'comercial-specification-name-' + ( $index() )}" id="comercial-specification-name" class="form-control no-border" type="texto">
 								</div>
 								<div class="col-sm-2">
-									<input id="comercial-specification-value" class="form-control no-border" type="texto" placeholder="valor">
+									<input data-bind="attr: { id: 'comercial-specification-value-' + ( $index() ) }"id="comercial-specification-value" class="form-control no-border" type="texto" placeholder="valor">
 								</div>
 							</div>
 							<!-- </template> -->
@@ -215,6 +220,7 @@
 						<button class="center-block btn btn-info"><span><img clas="img-responsive" src="{% static 'subast/img/106-Publicar.png' %}"></span>Publicar</button>
 					</div>
 				</div>
+				</form>
 
 				<!-- </div> -->
 			</div>
