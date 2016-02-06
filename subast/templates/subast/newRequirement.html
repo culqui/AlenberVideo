@@ -1,0 +1,240 @@
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head
+	     content must come *after* these tags -->
+	<title>Alenber</title>
+	<!-- Bootstrap -->
+	<link rel='icon' type="image/png" href="{% static 'subast/img/colibri-15.png' %}">
+	<link href="{% static 'subast/css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'subast/css/bootstrap-theme.min.css' %}" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,300,300italic,600,600italic' rel='stylesheet' type='text/css'>
+	<link href="{% static 'subast/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+
+	<header class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<img class="img-responsive block-center"src="{% get_media_prefix %}{{company.logo}}">
+				</div>
+				<div class="col-sm-10">
+					<h2>Nuevo Requerimiento</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<aside class="custom-aside col-sm-3 col-sm-push-9 col-md-2 col-md-push-10">
+				<nav class="navbar navbar-inverse" role="navigation">
+			        <div>
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			                    <span class="sr-only">Toggle navigation</span>
+			                    <span class="icon-bar"></span>
+			                    <span class="icon-bar"></span>
+			                    <span class="icon-bar"></span>
+			                </button>
+			                <a class="navbar-brand" href="{% url 'company_index' company.name %}"><img class="center-block brand-img"src="{% static 'subast/img/colibri-V3-white.png' %}"><small>Alenber.com</small></a>
+			            </div>
+
+			            <div id="navbar" class="navbar-collapse collapse">
+			                <ul class="nav navbar-nav">
+			                    <li class="inbox"><a href="#">Bandeja<span><img src="{% static 'subast/img/29-Buzon-white-blue-36.png' %}"></span><span class="badge">12</span></a></li>
+
+			                    <li class="active-li new-requirement"><a href="#">Nuevo Req<span><img src="{% static 'subast/img/21-Pub-req-blue-36.png' %}"></span></a></li>
+
+			                    <li class="cotizations">
+			                        <a href="#">Cotizaciones<span><img src="{% static 'subast/img/22-Req-en-Cot-white-blue36.png' %}"></span><span class="badge">10</span></a>
+			                     </li>
+
+			                    <li class="orders"><a href="#">Pedidos<span><img src="{% static 'subast/img/23-Req-en-Comp-all-white-36.png' %}"></span><span class="badge">15</span></a></li>
+			                </ul>
+
+			                <ul class="nav navbar-nav separate-nav">
+
+			                    <li class="historial"><a href="#">Histórico<span><img src="{% static 'subast/img/24-Historico-allwhite-36.png' %}"></span></a></li>
+
+			                    <li class="statistics"><a href="#">Estadísticas<span><img src="{% static 'subast/img/25-Estadisticas-allwhite-36.png' %}"></span></a></li>
+			                    <li><a href="#">ELIAS <span><img class="account-img img-circle" src="{% static 'subast/img/pictures/Elias.jpg'%}"></span></a></li>
+			                </ul>
+
+			            </div>
+			        </div>
+			    </nav>
+			</aside>
+
+			<div class="col-sm-9 col-sm-pull-3 col-md-offset-1 col-md-8 col-md-pull-2">
+
+				<!-- <div class="container"> -->
+
+					<div class="row row-eq-height">
+						<div class="text-center col-sm-offset-3 col-sm-2 col-xs-offset-3 col-xs-6">
+							<a href="{% url 'order_new_unique' company.name %}">
+								<img class="img-responsive center-block"src="{% static 'subast/img/33-Req-Unico-205.png' %}">
+							</a>
+							<h4>Requerimiento único</h4>
+							<a href=""><h5>Ver ejemplo</h5></a>
+						</div>
+
+						<div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-1 col-center">
+							<img class="img-responsive center-block"src="{% static 'subast/img/105-or-20-px.png' %}">
+						</div>
+
+						<div class="text-center col-sm-offset-0 col-sm-2 col-xs-offset-3 col-xs-6">
+							<a href="{% url 'order_new_multiple' company.name %}">
+								<img class="img-responsive center-block"src="{% static 'subast/img/33-Req-Unico-205.png' %}">
+							</a>
+							<h4>Requerimiento múltiple</h4>
+							<a href=""><h5>Ver ejemplo</h5></a>
+						</div>
+					</div>
+
+					<div class="row row-margin">
+						<div class="col-sm-12">
+							<div class="row">
+								<div class="col-sm-12">
+									<h3>Requerimientos por terminar</h3>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-12">
+									<ul class="list-unstyled">
+										<li class="panel panel-info" >
+											<div class="panel-heading">
+												<h5>D326 Ultima actualización 16 de Marzo</h5>
+											</div>
+											<div class="panel-body">
+
+												<div class="row">
+													<div class="thumbnail col-sm-2">
+														<img class="img-responsive center-block" src="{% get_media_prefix %}{{company.logo}}">
+													</div>
+
+													<div class="col-sm-10">
+														<a href="#"><h4>Motor de inducción de alta tensión::12 Unidades</h4></a>
+														<ul class="list-inline">
+															<li>Potencia: 50KVA</li>
+															<li>Tension: 33KV</li>
+															<li>Frecuencia Nominal: 60Hz</li>
+														</ul>
+
+														<div class="row">
+															<div class="col-xs-4 col-sm-3">
+																<div class="row">
+																	<div class="col-xs-3">
+																		<img src="img/40-Pointern-30.png">
+																	</div>
+																	<div class="col-xs-9">
+																		<span>Entregar en:</span>
+																		<div>
+																			<span data-bind="text: $data.place"></span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-xs-4 col-sm-3">
+																<div class="row">
+																	<div class="col-xs-3">
+																		<img src="img/41-To-pay-30.png">
+																	</div>
+																	<div class="col-xs-9">
+																		<span>Pago:</span>
+																		<div>
+																			<span data-bind="text: $data.payType"></span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-xs-4 col-sm-3">
+																<div class="row">
+																	<div class="col-xs-3">
+																		<img src="img/42-Cot-Recibidas-30.png">
+																	</div>
+																	<div class="col-xs-9">
+																		<span>Cotizaciones recibidas:</span>
+																		<span>
+																			<span data-bind="text: $data.cotizations"></span>
+																		</span>
+																	</div>
+																</div>
+															</div>
+
+														<!-- <ul class="list-inline">
+															<li>
+																<img src="img/40-Pointern-30.png">
+																<span>Entregar en:</span>
+																<h5 class="text-center">Callao</h5>
+															</li>
+
+															<li>
+																<img src="img/41-To-pay-30.png">
+																<span>Pago:</span>
+																<h5 class="text-center">A 60 días</h5>
+															</li>
+
+															<li>
+																<img src="img/42-Cot-Recibidas-30.png">
+																<span>Cotizaciones</span>
+																<span>recibidas:</span>
+																<h5 class="text-center">5</h5>
+															</li>
+														</ul> -->
+
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<footer>
+						<div class="row">
+							<div class="col-sm-12">
+								<nav>
+									<ul class="pagination">
+										<li class="disabled">
+									      <a href="#" aria-label="Previous">
+									        <span aria-hidden="true">&laquo;</span>
+									      </a>
+									    </li>
+									    <li class="active"><a href="#">1</a></li>
+									    <li><a href="#">2</a></li>
+									    <li><a href="#">3</a></li>
+									    <li><a href="#">4</a></li>
+									    <li><a href="#">5</a></li>
+									    <li>
+									      <a href="#" aria-label="Next">
+									        <span aria-hidden="true">&raquo;</span>
+									      </a>
+									    </li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</footer>
+				<!-- </div> -->
+			</div>
+		</div>
+	</div>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'subast/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'subast/js/aside.js' %}"></script>
+</body>
+</html>
