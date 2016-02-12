@@ -35,10 +35,14 @@
 		<div class="container-fluid">
 			<div class="row row-eq-height">
 				<div class="col-sm-1 ">
-					<div class="dim-header">
-						<a href="" class="logo-normal vcenter center-block"> <div >
-							<img class="img-responsive"src="{% static 'subast/img/logos/Antamina.png'%}">
-						</div></a>
+					<div class="dim-header ">
+
+						<a href="" class="logo-normal vcenter center-block" >
+							 <div class="vcenter">								
+									<img class="img-responsive  "src="{% static 'subast/img/logos/delcrosa40.jpg'%}" >
+								
+							</div>
+						</a>
 					</div>
 				</div>
 				
@@ -82,12 +86,13 @@
 			            <div id="navbar" class="navbar-collapse collapse">
 			                <ul class="nav navbar-nav">
 			                	
-			                    <li class="inbox"><a href="#">Bandeja<span><img class="margin-left5" src="{% static 'subast/img/29-Buzon-white-blue-36.png' %}"></span><span class="badge">12</span></a></li>
+			                    <li class="inbox"><a href="#">Bandeja<span><img class="margin-left5" src="{% static 'subast/img/29-Buzon-white-blue-36.png' %}"></span><span class="badge">10</span></a></li>
 
-			                    <li class="active-li new-requirement"><a href="#">Nuevo Req<span><img class="margin-left5" src="{% static 'subast/img/21-Pub-req-blue-36.png' %}"></span></a></li>
+			                    <li class="active-li BuscarMenu"><a href="#">Buscar<span><img class="margin-left5" src="{% static 'subast/img/26-Buscar-Req-allwhite-36.png' %}"></span><span class="badge">15</span></a>
+			                    </li>
 
-			                    <li class="cotizations">
-			                        <a href="#">Cotizaciones<span><img class="margin-left5" src="{% static 'subast/img/22-Req-en-Cot-white-blue36.png' %}"></span><span class="badge">10</span></a>
+			                    <li class="active-li cotiVentas">
+			                        <a href="#">Cotizaciones<span><img class="margin-left5" src="{% static 'subast/img/27-Cotizaciones-blue-36.png' %}"></span></a>
 			                     </li>
 
 			                    <li class="orders"><a href="#">Pedidos<span><img class="margin-left5" src="{% static 'subast/img/23-Req-en-Comp-all-white-36.png' %}"></span><span class="badge">15</span></a></li>
@@ -98,7 +103,7 @@
 			                    <li class="historial"><a href="#">Histórico<span><img class="margin-left5" src="{% static 'subast/img/24-Historico-allwhite-36.png' %}"></span></a></li>
 
 			                    <li class="statistics"><a href="#">Estadísticas<span><img class="margin-left5"  src="{% static 'subast/img/25-Estadisticas-allwhite-36.png' %}"></span></a></li>
-			                    <li><a href="#">ELIAS <span><img  class="margin-left5 account-img img-circle" src="{% static 'subast/img/pictures/Elias.jpg'%}"></span></a></li>
+			                    <li><a href="#">ESTÉFANY <span><img  class="margin-left5 account-img img-circle" src="{% static 'subast/img/pictures/Stefany.jpg'%}"></span></a></li>
 			                </ul>
 
 			            </div>
@@ -127,13 +132,14 @@
 						<div class="row row-eq-height">
 							<div class="col-sm-4 col-lg-2 col-center">
 								<div class="logo-medium">
-									<img class="img-responsive center-block" src="{% static 'subast/img/logos/Antamina.png' %}">
+
+									<img class="img-responsive vcenter center-block" src="{% static 'subast/img/logos/delcrosa.jpg' %}">
 								</div>
 							</div>
 							<div class="col-sm-8 col-lg-6 col-center">
-								<a href=""><spam class="blue18">Antamina S.A</spam></a>
+								<a href=""><spam class="blue18">Delcrosa S.A</spam></a>
 								<div class="clear"></div>
-								<spam class="black14">Requerimiento de compras</small>
+								<div class="black14">Cotización para: <a href=""> <span class="blue13">Compañía Minera Anatamina</span></a></div>
 							</div>
 						</div>
 
@@ -141,40 +147,61 @@
 
 						<div class="form-group marginTop50 margin-bot0">
 							<div class="col-sm-3">
-								<label class="control-label black18" for="requirement-title" >Requerimiento:</label>
+								<label class="control-label black18" for="requirement-title" >Producto propuesto:</label>
 							</div>
 							<div class="col-sm-8">
-								<input id="requirement-title"class="form-control no-border focus-format blue18" type="text" placeholder=" ">
+								<input id="requirement-title"class="form-control no-border focus-format orange18" type="text" placeholder=" ">
 							</div>
 						</div>
 
-						<div class="form-group margin-top-bot0 ">
-							<div class="col-sm-3">
-								<label class="control-label gris14" for="requirement-quantity">Cantidad:</label>
+						<div class="margin-bot0">
+							<div class="col-sm-3 padding-left00">
+								<span class=" black16"  >Requerimiento:</span>
 							</div>
-							<div class="col-sm-3">
-								<input id="requirement-quantity" class="form-control no-border focus-format" type="number" placeholder=" ">
+							<div class="col-sm-8">
+								<span class="blue16">Transformador en Aceite Trifásico</span>
 							</div>
 						</div>
 
-						<div class="form-group margin-top-bot0 ">
+						<div class="col-sm-4 col-sm-offset-3 marginTop20 ">
+							<span class="gris16 " >Solicitado</span>
+						</div>
+						<div class="col-sm-4 marginTop20">
+							<span class="black16 ">Propuesto</span>
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="form-group marginTop10 row-eq-height" >
+							<div class="col-sm-3" >
+								<label class="control-label black14" for="requirement-quantity">Cantidad:</label>
+							</div>
+							<div class="col-sm-4 col-center" >
+								<span class="gris14">5 Unidades</span>
+							</div>
+							<div class="col-sm-5">
+								<input id="requirement-quantity" class="form-control no-border focus-format" type="text" placeholder=" dsfsadfas">
+							</div>
+						</div>
+
+						<div class="form-group margin-top-bot0 row-eq-height"  >
 							<div class="col-sm-3">
 								<label class="control-label gris14" for="requirement-place-region">Para entregar en:</label>
 							</div>
-							<div class="col-sm-9">
+							<div class="col-sm-4 marginTop10">
+								<span class="gris14 ">Campamento Minero</span>
+								<div class="clear"></div>
+								<div class="gris14 marginTop10">San Marcos, Huari, Ancash</div>
+							</div>
+							<div class="col-sm-5">
 								<div class="row">
 									<div class="col-sm-12">
 										<input id="requirement-place-region" class="form-control no-border focus-format" type="text" placeholder="Dirección">
 									</div>
-									<div class="col-sm-4">
-										<input id="requirement-place-region" class="form-control no-border focus-format" type="text" placeholder="Distrito">
+									<div class="col-sm-12">
+										<input id="requirement-place-region" class="form-control no-border focus-format" type="text" placeholder="Distrito, Provincia, Departamento">
 									</div>
-									<div class="col-sm-3">
-										<input id="requirement-place-province" class="form-control no-border focus-format" type="text" placeholder="Provincia">
-									</div>
-									<div class="col-sm-3">
-										<input id="requirement-place-distrit" class="form-control no-border focus-format" type="text" placeholder="Región">
-									</div>
+									
 								</div>
 							</div>
 						</div>

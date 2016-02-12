@@ -6,111 +6,274 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head
 	     content must come *after* these tags -->
-	<title>Alenber</title>
+	<title>Alenber.com</title>
 	<!-- Bootstrap -->
 	<link rel='icon' type="image/png" href="{% static 'subast/img/colibri-15.png' %}">
+
+	<meta name="description" content="">
+
 	<link href="{% static 'subast/css/bootstrap.min.css' %}" rel="stylesheet">
 	<link href="{% static 'subast/css/bootstrap-theme.min.css' %}" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,300,300italic,600,600italic' rel='stylesheet' type='text/css'>
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,500,400italic,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+	<link href="{% static 'subast/css/normalize.css' %}" rel="stylesheet">
+	<link href="{% static 'subast/css/main.css' %}" rel="stylesheet">
+
+	<link href="{% static 'subast/css/general.css' %}" rel="stylesheet">
 	<link href="{% static 'subast/css/style.css' %}" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="{% static 'subast/css/elegant_font/style.css' %}" rel="stylesheet">
+
+
+	<!--<script src="{js/vendor/modernizr-2.8.3.min.js"></script>-->
+
 </head>
 <body>
 
 	<header>
 		<div class="container-fluid">
 			<div class="row row-eq-height">
-				<div class="logo-header col-xs-12 col-sm-2 col-center">
-					<img class="image-logo img-responsive center-block" src="{% static 'subast/img/colibri-V3-white.png' %}" alt="Logo Image">
-					<h3 class="text-center">Alenber.com</h3>
+				<div class="logo-header col-xs-12 col-sm-2 col-center text-center center-block padding5" >
+					<img class="image-logo img-responsive center-block " src="{% static 'subast/img/colibri-V5-48-white.png' %}" alt="Logo Image">
+
+					<span class="white14 marginTop10 ">Alenber.com</span>			
 				</div>
+				
 				<div class="bg-header col-xs-12 col-sm-10">
-					<div class="row">
-						<div class="col-sm-8 text-center">
+					<div class="row row-eq-height">
+						<div class="col-md-9 col-sm-6 text-center col-center" >				
 							<div>
-								<h1>Publica lo que requieres y encuentra a tus proveedores</h1>
+								<h2 class="white36">Publica lo que requieres y encuentra a tus proveedores</h2>
 							</div>
 							<br>
 
 							<div class="row row-eq-height">
-								<div class="col-sm-3 text-center">
-									<img class="img-responsive center-block" src="{% static 'subast/img/1-Pub-Req-68-white.png'%}">
-									<h4>1. Publica tu requerimiento en www.colibri-supplier.com</h4>
+								<div class="col-md-3 text-center">
+									<div class="step-tamano center-block hidden-xs">
+										<img class="img-responsive center-block" src="{% static 'subast/img/1-Pub-Req-68-white.png'%}">
+									</div>
+									<h4 class="white16">1. Publica tu requerimiento en Alenber.com</h4>
 								</div>
-								<div class="col-sm-1 col-center">
+								<div class="col-md-1 col-center hidden-sm hidden-xs">
 									<img class="img-responsive center-block" src="{% static 'subast/img/102-Siguiente-white-30.png' %}">
 								</div>
-								<div class="col-sm-3 text-center">
-									<img class="img-responsive center-block" src="{% static 'subast/img/2-Recibir-Cotizacion-68-white.png' %}">
-									<h4>2. Diversos proveedores envían sus cotizaciones por este portal</h4>
+								<div class="col-md-3 text-center ">
+									<div class="step-tamano center-block hidden-xs">
+										<img class="img-responsive center-block" src="{% static 'subast/img/2-Recibir-Cotizacion-68-white.png' %}">
+									</div>
+									<h4 class="white16">2. Recibe cotizaciones de diferentes proveedores</h4>
 								</div>
-								<div class="col-sm-1 col-center">
+								<div class="col-md-1 col-center hidden-sm hidden-xs">
 									<img class="img-responsive center-block" src="{% static 'subast/img/102-Siguiente-white-30.png' %}">
 								</div>
-								<div class="col-sm-3 text-center">
-									<img class="img-responsive center-block" src="{% static 'subast/img/3-Sel-MejorCotiza-68-white.png'%}">
-									<h4>3. El sistema te presentará las cotizaciones ordenada</h4>
+								<div class="col-md-3 text-center center-block">
+									<div class="step-tamano center-block hidden-xs">
+										<img class="img-responsive center-block" src="{% static 'subast/img/3-Sel-MejorCotiza-68-white.png'%}">
+									</div>
+									<h4 class="white16">3. Selecciona la mejor cotización</h4>
 								</div>
+							</div>								
+						</div>					
 
-							</div>
-						</div>
+						<div class="col-md-3 col-lg-3 col-sm-6 col-center padding-top10 padding-bottom10" >
+	                        <div class="container-loging">
+	                            <p class="white16">Iniciar cesi&oacute;n</p>
+	                            <div class="row">
+	                                <div class="col-md-12">
+	                                    <form action="" method="get" >                 
+	                                        <input type="email" class="form-control padding-left5" id="email" placeholder="Ingrese email" />                                
+	                                    </form>
+	                                </div>
+	                                
+	                                <div class="col-lg-7 col-sm-12 col-md-12 col-xs-12 " >
+
+	                                    <form class="marginTop10 marginBot10" action="" method="get">
+	                                        <input type="password" class="form-control padding-left5" id="pwd" placeholder="Contrase&ntilde;a"/>                                
+	                                    </form>
+	                                </div>
+
+	                                <div class="col-lg-5 col-sm-12 col-md-12 col-xs-12 padding-left0" >
+	                                    <button id="ingresar" class="btn padding-left6   marginTop10 marginBot10 button-blue width100 text-center center-block">
+	                                        <div class="block">
+	                                            <p class="float-left white14">Ingresar</p>
+	                                            <img class="float-left padding-left3" src="{% static 'subast/img/12-Open-door-white.png' %}" align="middle">
+	                                        </div>
+	                                    </button>
+	                                </div>
+	                            </div>
+
+	                            <div class="clear"></div>
+	                            <a href=" " class="blue14">&iquestOlvidaste tu contrase&ntilde;a?</a>
+	                        </div>  
+	                    
+	                        <div class="container-loging marginTop15">                
+	                            <div class="no_registrado">
+	                                <p class="white16">&iquestTodav&iacutea no est&aacutes registrado?</p>
+	                            </div>
+	                            <button type="button" id="registra-empresa" class="center-block btn background-blue marginTop10 marginBot10 width100 button-blue" data-toggle="modal" data-target="#myModal">
+	                                <div class="block">
+	                                    <p class="float-left white14 ">Registrar empresa</p>
+	                                    <img class="float-left padding-left5" src="{% static 'subast/img/13-registrar-empresa-white.png'%}" align="middle">
+	                                </div>
+	                            </button>
+
+		                           <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		                              <div class="modal-dialog" role="document">
+		                                <div class="modal-content">
+			                                <div class="modal-header">
+			                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>	                                    
+			                                </div>
+
+		                                  	<div class="modal-body ">
+		                                  	
+		                                  		<span class="black28 ">Puedes registrarte de dos formas:</span>
+		                                  	
+		                                  		<div class="container col-sm-12 marginTop20">
+		                                  			<div class="row row-eq-height col-xs-12">
+		                                  				<div class="col-sm-5 marginTop30">
+		                                  					<div class="row row-eq-height center-block" >
+		                                  						<div class="col-sm-8 col-sm-offset-2 radius5 block back-blue-oscuro padding-top30 padding-bottom30" >
+		                                  							<div class="col-center text-center">
+			                                  							<span class="white16">Como empresa</span>
+			                                  							<span class="white18">PROVEEDORA</span>
+			                                  						</div>
+		                                  						</div>
+		                                  					</div>
+
+
+
+		                                  					<p class="black16 margin-bot0 marginTop30">Como empresa proveedora podrá:</p>
+		                                  					<ul class="list-unstyled">
+			                                  					<li class=""><span class="icon_check blue-check padding-right3"></span>Publicar requerimientos</li>
+			                                  					<li><span class="icon_check blue-check padding-right3"></span></i>Recibir cotizaciones</li>
+			                                  					<li><span class="icon_check blue-check padding-right3"></span>Enviar órdenes de compra</li>
+			                                  				</ul>
+
+		                                  					<button type="button" id="registra-empresa" class="center-block btn button-height36 background-blue marginTop20 marginBot10 width100 button-blue" data-toggle="modal" data-target="#myModal">
+								                                <div class="block">
+								                                    <p class="float-left white14 ">Registrarse como comprador</p>
+								                                    <img class="float-left padding-left5" src="{% static 'subast/img/13-registrar-empresa-white.png'%}" align="middle">
+								                                </div>
+								                            </button>
+		                                  				</div>
+		                                  				
+		                                  				<div class="col-sm-offset-0 col-sm-2 col-center hidden-xs">
+															<img class="img-responsive center-block"src="{% static 'subast/img/105-or-20-px.png' %}">
+
+														</div>
+		                                  				<div class="col-sm-5 col-xs-12 marginTop30">
+		                                  					<div class="row row-eq-height">
+		                                  						<div class="col-sm-8 col-sm-offset-2 radius5 back-orange-oscuro padding-top30 padding-bottom30" >
+		                                  							<div class="col-center text-center">
+			                                  							<span class="white16">Como empresa</span>
+			                                  							<span class="white18">COMPRADORA</span>
+			                                  						</div>
+		                                  						</div>
+		                                  					</div>
+
+
+
+		                                  					<p class="black16 margin-bot0 marginTop30">Como empresa proveedora podrá:</p>
+		                                  					<ul class="list-unstyled">
+			                                  					<li class=""><span class="icon_check blue-check padding-right3"></span>Publicar requerimientos</li>
+			                                  					<li><span class="icon_check blue-check padding-right3"></span></i>Recibir cotizaciones</li>
+			                                  					<li><span class="icon_check blue-check padding-right3"></span>Enviar órdenes de compra</li>
+			                                  				</ul>
+
+		                                  					<button type="button" id="registra-empresa" class="center-block btn button-orange marginTop20 marginBot10 width100" data-toggle="modal" data-target="#myModal">
+								                                <div class="block">
+								                                    <p class="float-left white14 ">Registrarse como comprador</p>
+								                                    <img class="float-left padding-left5" src="{% static 'subast/img/13-registrar-empresa-white.png'%}" align="middle">
+								                                </div>
+								                            </button>
+		                                  				</div>
+		                                  			</div>
+		                                  			
+		                                  		</div>                                    
+		                                  	</div>
+
+		                                  	<div class="modal-footer marginBot30">
+			                                    
+			                                    
+	                                  		</div>
+		                                </div>
+		                              </div>
+		                            </div>
+
+	                            <span class="white14" >Si tu empresa est&aacute registrada:</span>         
+	                            <a href=" " class="blue-light14">Crear nuevo usuario</a>
+	                        </div>
+	               		</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="jumbotron">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-offset-1 col-sm-9">
-						<!-- <form> -->
-							<div class="input-group">
-								<label class="sr-only" for="searchInput">Buscar Requerimientos</label>
-								<input class="form-control"type="search" placeholder="Buscar requerimientos">
-								<span class="input-group-btn"><button class="btn btn-info"><img class="image-button" src="{% static 'subast/img/83-Lupa-white.png' %}">Buscar</button></span>
-							</div>
-						<!-- </form> -->
-					</div>
-					<div class="col-sm-2">
-						<a href="{% url 'order_new' company.name%}"><button class="btn btn-warning"><img class="image-button" src="{% static 'subast/img/5-Pub-Req--24-white-px.png' %}"> Publicar requerimiento</button></a>
-					</div>
+			<div class="container-fluid">
+				<div class="row marginTop35 " >
+				 	<div class="col-md-3 col-md-push-9 marginBot20  center-block" >
+                        <div class="row" >
+                            <div class="col-sm-2">
+                            </div>
+                            <div class="col-sm-10" >
+                                
+                                    <a href="newRequirement.html"><button class="width100 btn button-publicar "><img class="image-button" src="{% static 'subast/img/5-Pub-Req--24-white-px.png'%}"><span class="white18"> Publicar requerimiento</span></button></a>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div  class=" col-md-7  col-md-pull-1 marginBot20 padding-left0">
+                        <form> 
+                            <div class="input-group" >
+                                <label class="sr-only" for="searchInput">Buscar Requerimientos</label>
+                                <input class="form-control buscar black18 " type="search" placeholder="Buscar requerimientos " >
+                                <span class="input-group-btn"><button class="btn btn-info button-buscar background-blue button-blue"><img class="image-button" src="{% static 'subast/img/83-Lupa-white.png'%}"><span class="margin-left5 white18">Buscar</span></button></span>
+                            </div>
+                        </form>
+                    </div>
 				</div>
 			</div>
 		</div>
 
 	</header>
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-offset-1 col-sm-9">
+			<div class="col-sm-offset-2 col-sm-7">
 				<ul class="list-unstyled list-margin" data-bind="foreach: orderList">
 					<li>
 						<div class="row">
-							<div class="thumbnail col-sm-2 logo-company">
-								<img class="img-responsive center-block" data-bind="attr: { src: '{% get_media_prefix%}' + $data.companyLogo()}">
+							<div class="thumbnail col-sm-2 col-xs-2 logo-medium">
+								<img class="img-responsive center-block vcenter" data-bind="attr: { src: '{% get_media_prefix%}' +  $data.companyLogo()}">
 							</div>
 
-							<div class="col-sm-8">
+							<div class="col-sm-10 col-xs-10 padding-right0">
 
 								<div class="row">
 									<div class="col-xs-12">
-										<h4><a data-bind="visible: $data.requirements().length == 1, attr: { href: 'orders/' + $index() }"><span data-bind="text: $data.requirements()[0].name"></span> :: <span data-bind="text: $data.requirements()[0].quantity"></span><small class="text-center urgent-label" data-bind="visible: $data.isUrgent">Urgente</small></a></h4>
+										<span class="blue18"><a data-bind="visible: $data.requirements().length == 1, attr: { href: 'orders/' + $index() }"><span data-bind="text: $data.requirements()[0].name"></span> :: <span data-bind="text: $data.requirements()[0].quantity"></span><small class="text-center urgent-label" data-bind="visible: $data.isUrgent">Urgente</small></a></span>
 
-										<h4><a data-bind="visible: $data.requirements().length > 1, attr: { href: 'orders/' + $index() }"><span data-bind="text: $data.name"></span><small class="text-center urgent-label" data-bind="visible: $data.isUrgent">Urgente</small></a></h4>
+										<span class="blue18"><a data-bind="visible: $data.requirements().length > 1, attr: { href: 'orders/' + $index() }"><span data-bind="text: $data.name"></span><small class="text-center urgent-label" data-bind="visible: $data.isUrgent">Urgente</small></a></span>
 
 									</div>
 								</div>
 
 								<div class="row">
 									<div class="col-xs-12">
-										<h4><small>Solicitado por <a href="#" data-bind="text: $data.company"></a><span> .Publicado <span data-bind="text: $data.datePublish"></span></span></small></h4>
+										Solicitado por <a href="#" data-bind="text: $data.company"></a><span class="gris14"> .Publicado <span  data-bind="text: $data.datePublish"></span></span>
 									</div>
 								</div>
 
-								<div class="row">
+								<div class="row marginTop5">
 									<div class="col-xs-12">
 										<ol class="list-unstyled" data-bind="foreach: requirements">
 											<li>
-												<h5><a href="#" data-bind="visible: $parent.requirements().length > 1"><span data-bind="text: ( $index() + 1 ) + '. ' + $data.name"></span> :: <span data-bind="text: $data.quantity"></span></a></h5>
+												<span><a href="#" data-bind="visible: $parent.requirements().length > 1"><span data-bind="text: ( $index() + 1 ) + '. ' + $data.name"></span> :: <span data-bind="text: $data.quantity"></span></a></span>
+
 												<ul class="list-inline" data-bind=" visible: $parent.requirements().length == 1, foreach: technicalDetails">
 													<li><span data-bind="text: $data.name"></span><span>: </span><span data-bind="text: $data.value"></span></li>
 
@@ -120,14 +283,14 @@
 									</div>
 								</div>
 
-								<div class="row">
+								<div class="row marginTop5">
 									<div class="col-xs-4 col-sm-3">
 										<div class="row">
-											<div class="col-xs-3">
+											<div class="col-xs-12">
 												<img src="{% static 'subast/img/40-Pointern-30.png' %}">
 											</div>
-											<div class="col-xs-9">
-												<span>Entregar en:</span>
+											<div class="col-xs-12">
+												<span class="hidden-xs">Entregar en:</span>
 												<div>
 													<span data-bind="text: $data.place"></span>
 												</div>
@@ -137,10 +300,10 @@
 
 									<div class="col-xs-4 col-sm-3">
 										<div class="row">
-											<div class="col-xs-3">
+											<div class="col-xs-12">
 												<img src="{% static 'subast/img/41-To-pay-30.png' %}">
 											</div>
-											<div class="col-xs-9">
+											<div class="col-xs-12">
 												<span>Pago:</span>
 												<div>
 													<span data-bind="text: $data.payType"></span>
@@ -151,10 +314,10 @@
 
 									<div class="col-xs-4 col-sm-3">
 										<div class="row">
-											<div class="col-xs-3">
+											<div class="col-xs-12 center-block">
 												<img src="{% static 'subast/img/42-Cot-Recibidas-30.png' %}">
 											</div>
-											<div class="col-xs-9">
+											<div class="col-xs-12">
 												<span>Cotizaciones recibidas:</span>
 												<span>
 													<span data-bind="text: $data.cotizations"></span>
@@ -163,7 +326,7 @@
 										</div>
 									</div>
 
-									<div class="col-sm-3">
+									<div class="col-xs-12 col-sm-3">
 										<a data-bind="attr: { href: 'orders/' + $index() }" class="btn btn-default btn-cotization"><span><img src="{% static 'subast/img/6-Pub-Req-36.png' %}"> Enviar Cotización</span></a>
 									</div>
 								</div>
@@ -174,53 +337,59 @@
 				</ul>
 			</div>
 
-			<aside class="col-sm-2">
-				<h3>Categorías</h3>
-				<div>
-					<h4>Publicadores</h4>
-					<ul class="list-unstyled" data-bind="foreach: publisherList">
-						<li>
-							<h5 class="filter"><span data-bind="text: $data.name"></span><small data-bind="text: ' (' + $data.publications() + ')'"></small><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></h5>
-						</li>
-					</ul>
+			<aside class="col-sm-3 hidden-xs">
+				 <div class="row">
+		                <div class="col-sm-2">
+		                </div>
+		                <div class="col-sm-10" >
+		                    <span class="black18">Categorías</span>
+		                    <div class="marginTop20">
+		                        <span class="black16 ">Publicadores</span>
+		                        <ul class="list-unstyled marginTop10 margin-bot0" data-bind="foreach: publisherList" >
+		                            <li class="" >
+		                                <a href="#" class="" ><h5 class="filter margin-top-bot0 padding-left0" ><span  data-bind="text: $data.name"></span><small  data-bind="text: ' (' + $data.publications() + ')'"></small><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></h5></a>
+		                            </li>
+		                        </ul>
 
-					<div>
-						<label data-bind="click: addPublisher">+Añadir</label>
-					</div>
-				</div>
+		                        <div >
+		                            <label class="margin-left10"  data-bind="click: addPublisher">+Añadir</label>
+		                        </div>
+		                    </div>
 
-				<div>
-					<h4>Sector</h4>
-					<ul class="list-unstyled" data-bind="foreach: sectorList">
-						<li>
-							<h5 class="filter"><span data-bind="text: $data.name"></span><small data-bind="text: ' (' + $data.publications() + ')'"></small><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></h5>
-						</li>
-					</ul>
-				</div>
+		                    <div class="marginTop25">
+		                        <span class="black16">Sector</span>
+		                        <ul class="list-unstyled marginTop10 margin-bot0" data-bind="foreach: sectorList">
+		                            <li>
+		                                <a href="#"><h5 class="filter margin-top-bot0"><span data-bind="text: $data.name"></span><small data-bind="text: ' (' + $data.publications() + ')'"></small><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></h5></a>
+		                            </li>
+		                        </ul>
+		                    </div>
 
-				<div>
-					<h4>Fecha de publicación</h4>
-					<ul class="list-unstyled" data-bind="foreach: dateList">
-						<li>
-							<h5 class="filter"><span data-bind="text: $data.name"></span><small data-bind="text: ' (' + $data.publications() + ')'"></small><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></h5>
-						</li>
-					</ul>
-				</div>
+		                    <div class="marginTop25">
+		                        <span class="black16">Fecha de publicación</span>
+		                        <ul class="list-unstyled marginTop10 margin-bot0" data-bind="foreach: dateList">
+		                            <li>
+		                                <a href="#"><h5 class="filter margin-top-bot0"><span data-bind="text: $data.name"></span><small data-bind="text: ' (' + $data.publications() + ')'"></small><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></h5></a>
+		                            </li>
+		                        </ul>
+		                    </div>
 
-				<div>
-					<h4>Lugar</h4>
-					<ul class="list-unstyled" data-bind="foreach: placeList">
-						<li>
-							<h5 class="filter"><span data-bind="text: $data.name"></span><small data-bind="text: ' (' + $data.publications() + ')'"></small><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></h5>
-						</li>
-					</ul>
-				</div>
+		                    <div class="marginTop25">
+		                        <span class="black16">Lugar</span>
+		                        <ul class="list-unstyled marginTop10 margin-bot0" data-bind="foreach: placeList">
+		                            <li>
+		                                <a href="#"><h5 class="filter margin-top-bot0"><span data-bind="text: $data.name"></span><small data-bind="text: ' (' + $data.publications() + ')'"></small><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></h5></a>
+		                            </li>
+		                        </ul>
+		                    </div>
+		                </div>
+		            </div>
 			</aside>
 
 		</div>
 		<footer>
 			<div class="row">
-				<div class="col-sm-12">
+				<div class="col-sm-12 col-sm-offset-3">
 					<nav>
 						<ul class="pagination">
 							<li class="disabled">
@@ -233,6 +402,11 @@
 						    <li><a href="#">3</a></li>
 						    <li><a href="#">4</a></li>
 						    <li><a href="#">5</a></li>
+						    <li><a href="#">6</a></li>
+						    <li><a href="#">7</a></li>
+						    <li class="hidden-xs"><a href="#">8</a></li>
+						    <li class="hidden-xs"><a href="#">9</a></li>
+						    <li class="hidden-xs"><a href="#">10</a></li>
 						    <li>
 						      <a href="#" aria-label="Next">
 						        <span aria-hidden="true">&raquo;</span>
@@ -244,11 +418,25 @@
 			</div>
 		</footer>
 	</div>
+
+
+
+
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{% static 'subast/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'subast/js/knockout-3.4.0.js' %}"></script>
-    <script src="{% static 'subast/js/main.js' %}"></script>
+	<script src="{% static 'subast/js/main.js' %}"></script>
+
+    
+    <script src="{% static 'subast/js/plugins.js' %}"></script>
+    <script src="{% static 'subast/js/bootstrap.min.js' %}"></script>
+
+    
+
+    
 </body>
 </html>

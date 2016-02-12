@@ -10,4 +10,7 @@ urlpatterns = [
 	url(r'^(?P<company_name>[a-z]+)/order/new/multiple$', views.order_new_multiple, name = 'order_new_multiple'),
 	url(r'^(?P<company_name>[a-z]+)/order/publish$', views.order_new_multiple, name = 'order_publish'),
 	url(r'^companys_json/$', views.companys_json, name = 'companys_json'),
+
+	#Cotizaciones
+	url(r'^(?P<company_name>[a-z]+)/coti/new/unique$', views.coti_new_unique, name = 'coti_new_unique'),
 ]

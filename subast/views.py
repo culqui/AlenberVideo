@@ -26,6 +26,8 @@ def order_new_unique(request, company_name):
 	context = {'company': company}
 	return render(request, 'subast/uniqueRequirement.html', context)
 
+
+
 def order_new_multiple(request, company_name):
 	company = get_object_or_404(Company, name = company_name)
 	context = {'company': company}
@@ -34,3 +36,10 @@ def order_new_multiple(request, company_name):
 def companys_json(request):
 	data = serializers.serialize("json", Company.objects.all())
 	return HttpResponse(data, content_type = 'application/json')
+
+#Cotizaciones
+
+def coti_new_unique(request, company_name):
+	company = get_object_or_404(Company, name = company_name)
+	context = {'company': company}
+	return render(request, 'subast/uniqueCotizacion.html', context)

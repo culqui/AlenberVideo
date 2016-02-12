@@ -6,63 +6,89 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head
 	     content must come *after* these tags -->
-	<title>Alenber</title>
+	<title>Alenber.com</title>
 	<!-- Bootstrap -->
 	<link rel='icon' type="image/png" href="{% static 'subast/img/colibri-15.png' %}">
+
+	<meta name="description" content="">
+
 	<link href="{% static 'subast/css/bootstrap.min.css' %}" rel="stylesheet">
 	<link href="{% static 'subast/css/bootstrap-theme.min.css' %}" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,300,300italic,600,600italic' rel='stylesheet' type='text/css'>
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,500,400italic,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+	<link href="{% static 'subast/css/normalize.css' %}" rel="stylesheet">
+	<link href="{% static 'subast/css/main.css' %}" rel="stylesheet">
+
+	<link href="{% static 'subast/css/general.css' %}" rel="stylesheet">
 	<link href="{% static 'subast/css/style.css' %}" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="{% static 'subast/css/elegant_font/style.css' %}" rel="stylesheet">
+
+
+	<!--<script src="{js/vendor/modernizr-2.8.3.min.js"></script>-->
 </head>
 <body>
 
 	<header class="jumbotron">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-2">
-					<img class="img-responsive block-center"src="{% get_media_prefix %}{{company.logo}}">
+		<div class="container-fluid">
+			<div class="row row-eq-height">
+				<div class="col-sm-1 ">
+					<div class="dim-header">
+						<a href="" class="logo-normal vcenter center-block"> <div >
+							<img class="img-responsive"src="{% static 'subast/img/logos/Antamina.png'%}">
+						</div></a>
+					</div>
 				</div>
-				<div class="col-sm-10">
-					<h2>Nuevo Requerimiento</h2>
+				
+
+				<div class="col-sm-9 ">
+					<div class="dim-header ">
+						<div class="vcenter pull-left margin-left10">
+							<span class="black20">Nuevo Requerimiento</span>
+						</div>
+					</div>
 				</div>
+
 			</div>
 		</div>
 	</header>
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<aside class="custom-aside col-sm-3 col-sm-push-9 col-md-2 col-md-push-10">
+			<aside class="custom-aside col-sm-3 col-sm-push-9 col-md-2 col-md-push-10 padding-right0">
 				<nav class="navbar navbar-inverse" role="navigation">
 			        <div>
-			            <div class="navbar-header">
+			            <div class="navbar-header dim-header">
 			                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 			                    <span class="sr-only">Toggle navigation</span>
 			                    <span class="icon-bar"></span>
 			                    <span class="icon-bar"></span>
 			                    <span class="icon-bar"></span>
 			                </button>
-			                <a class="navbar-brand" href="{% url 'company_index' company.name %}"><img class="center-block brand-img"src="{% static 'subast/img/colibri-V3-white.png' %}"><small>Alenber.com</small></a>
+			                <a class="vcenter text-center" href="{% url 'company_index' company.name %}"><img class="center-block brand-img"src="{% static 'subast/img/colibri-V5-32-white.png' %}"><span class="logo-header">Alenber.com</span></a>
 			            </div>
 
 			            <div id="navbar" class="navbar-collapse collapse">
 			                <ul class="nav navbar-nav">
-			                    <li class="inbox"><a href="#">Bandeja<span><img src="{% static 'subast/img/29-Buzon-white-blue-36.png' %}"></span><span class="badge">12</span></a></li>
+			                    <li class="inbox"><a href="#">Bandeja<span><img class="margin-left5" src="{% static 'subast/img/29-Buzon-white-blue-36.png' %}"></span><span class="badge">12</span></a></li>
 
-			                    <li class="active-li new-requirement"><a href="#">Nuevo Req<span><img src="{% static 'subast/img/21-Pub-req-blue-36.png' %}"></span></a></li>
+			                    <li class="active-li new-requirement"><a href="#">Nuevo Req<span><img class="margin-left5" src="{% static 'subast/img/21-Pub-req-blue-36.png' %}"></span></a></li>
 
 			                    <li class="cotizations">
-			                        <a href="#">Cotizaciones<span><img src="{% static 'subast/img/22-Req-en-Cot-white-blue36.png' %}"></span><span class="badge">10</span></a>
+			                        <a href="#">Cotizaciones<span><img class="margin-left5" src="{% static 'subast/img/22-Req-en-Cot-white-blue36.png' %}"></span><span class="badge">10</span></a>
 			                     </li>
 
-			                    <li class="orders"><a href="#">Pedidos<span><img src="{% static 'subast/img/23-Req-en-Comp-all-white-36.png' %}"></span><span class="badge">15</span></a></li>
+			                    <li class="orders"><a href="#">Pedidos<span><img class="margin-left5" src="{% static 'subast/img/23-Req-en-Comp-all-white-36.png' %}"></span><span class="badge">15</span></a></li>
 			                </ul>
 
 			                <ul class="nav navbar-nav separate-nav">
 
-			                    <li class="historial"><a href="#">Histórico<span><img src="{% static 'subast/img/24-Historico-allwhite-36.png' %}"></span></a></li>
+			                    <li class="historial"><a href="#">Histórico<span><img class="margin-left5" src="{% static 'subast/img/24-Historico-allclass="margin-left5"white-36.png' %}"></span></a></li>
 
-			                    <li class="statistics"><a href="#">Estadísticas<span><img src="{% static 'subast/img/25-Estadisticas-allwhite-36.png' %}"></span></a></li>
-			                    <li><a href="#">ELIAS <span><img class="account-img img-circle" src="{% static 'subast/img/pictures/Elias.jpg'%}"></span></a></li>
+			                    <li class="statistics"><a href="#">Estadísticas<span><img class="margin-left5"  src="{% static 'subast/img/25-Estadisticas-allwhite-36.png' %}"></span></a></li>
+			                    <li><a href="#">ELIAS <span><img  class="account-img img-circle margin-left5" src="{% static 'subast/img/pictures/Elias.jpg'%}"></span></a></li>
 			                </ul>
 
 			            </div>
@@ -74,13 +100,41 @@
 
 				<!-- <div class="container"> -->
 
-					<div class="row row-eq-height">
+					<div class="row row-eq-height marginTop50">
 						<div class="text-center col-sm-offset-3 col-sm-2 col-xs-offset-3 col-xs-6">
 							<a href="{% url 'order_new_unique' company.name %}">
 								<img class="img-responsive center-block"src="{% static 'subast/img/33-Req-Unico-205.png' %}">
 							</a>
-							<h4>Requerimiento único</h4>
-							<a href=""><h5>Ver ejemplo</h5></a>
+							<div class="marginTop10">
+								<a href="uniqueRequirement.html">
+								<span class="blue18">Requerimiento único</span>
+								</a>
+							</div>							
+
+								<!-- Button trigger modal -->
+								<button type="button" class="btn ejemploReq gris14" data-toggle="modal" data-target="#EjemReqUnico">
+								  Ver ejemplo
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="EjemReqUnico" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+								  <div class="modal-dialog" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								        <h4 class="modal-title black20" id="myModalLabel">Ejemplo de de Requerimiento Único</h4>
+								      </div>
+								      <div class="modal-body">
+
+								        <img src="{% static 'subast/img/EjemploReqUnico.jpg' %}">
+								      </div>
+								      <div class="modal-footer">
+								        
+								      </div>
+								    </div>
+								  </div>
+								</div>
+
 						</div>
 
 						<div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-1 col-center">
@@ -91,11 +145,40 @@
 							<a href="{% url 'order_new_multiple' company.name %}">
 								<img class="img-responsive center-block"src="{% static 'subast/img/33-Req-Unico-205.png' %}">
 							</a>
-							<h4>Requerimiento múltiple</h4>
-							<a href=""><h5>Ver ejemplo</h5></a>
+							<div class="marginTop10">
+								<a href="uniqueRequirement.html">
+								<span class="blue18">Requerimiento múltiple</span>
+								</a>
+							</div>							
+
+								<!-- Button trigger modal -->
+								<button type="button" class="btn ejemploReq gris14" data-toggle="modal" data-target="#EjemReqMultiple">
+								  Ver ejemplo
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="EjemReqMultiple" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+								  <div class="modal-dialog" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								        <h4 class="modal-title black20" id="myModalLabel">Ejemplo de de Requerimiento Múltiple</h4>
+								      </div>
+								      <div class="modal-body">
+
+								        <img src="{% static 'subast/img/EjemploReqMultiple.jpg' %}">
+								      </div>
+								      <div class="modal-footer">
+								        
+								      </div>
+								    </div>
+								  </div>
+								</div>
+
 						</div>
 					</div>
 
+					<!--
 					<div class="row row-margin">
 						<div class="col-sm-12">
 							<div class="row">
@@ -168,6 +251,7 @@
 																	</div>
 																</div>
 															</div>
+															-->
 
 														<!-- <ul class="list-inline">
 															<li>
@@ -189,7 +273,7 @@
 																<h5 class="text-center">5</h5>
 															</li>
 														</ul> -->
-
+														<!--
 													</div>
 												</div>
 											</div>
@@ -199,8 +283,10 @@
 							</div>
 						</div>
 					</div>
+					-->
 
-					<footer>
+					<!--
+					<footer >
 						<div class="row">
 							<div class="col-sm-12">
 								<nav>
@@ -224,17 +310,20 @@
 								</nav>
 							</div>
 						</div>
-					</footer>
+					</footer>-->
 				<!-- </div> -->
 			</div>
 		</div>
 	</div>
 
 
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="{% static 'subast/js/main.js' %}"></script>
     <script src="{% static 'subast/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'subast/js/aside.js' %}"></script>
+
 </body>
 </html>

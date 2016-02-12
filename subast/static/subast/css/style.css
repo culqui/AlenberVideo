@@ -1,7 +1,8 @@
-
-body{
-  font-family: 'Josefin Sans', sans-serif;
+.letter-spacing{
+  letter-spacing: 20px;
+  color:orange;
 }
+
 
 .image-logo{
 }
@@ -13,7 +14,7 @@ body{
 .logo-header{
 	color: white;
 	background-color: #0f8efa;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 }
 
 .bg-header{
@@ -42,11 +43,6 @@ body{
 
 }
 
-
-.navbar-brand{
-  height: 100px;
-}
-
 .navbar-toggle{
   margin-top: 30px;
 }
@@ -54,7 +50,7 @@ body{
 .navbar-inverse{
   background-image: linear-gradient(to bottom,#329ffb 0,#329ffb 100%);
   background-color: white;
-  border-color: white;
+  border:none;
 }
 
 .navbar-inverse .navbar-nav>li>a{
@@ -71,7 +67,7 @@ body{
   padding: 3px;
   margin-left: -18px;
   font-size: 10px;
-  border-radius: 2px;
+  border-radius: 10px;
   vertical-align: top;
 }
 
@@ -87,6 +83,10 @@ body{
 
   .navbar-header {
     float: none;
+  }
+
+  .navbar-header a:hover{
+    text-decoration: none;
   }
 
   .container>.navbar-header{
@@ -110,7 +110,7 @@ body{
   }
 
   .custom-aside{
-    margin-top: -189px;
+    margin-top: -103px;
     z-index: 1;
   }
 
@@ -133,7 +133,7 @@ body{
 }
 
 .navbar-header{
-  background-color: #1B94FA;
+  background-color: #0f8efa;;
 }
 
 
@@ -164,6 +164,11 @@ body{
   margin-left: 10px;
   padding: 2px 10px;
 
+}
+
+.btn-cotization{
+  background: #f5f9fc;
+  border-color: #bfe0ec;
 }
 
 .btn-cotization:hover,
@@ -217,10 +222,66 @@ body{
   border-style: solid;
   border-width: 1px;
   border-color: #7bbeee;
+  border-radius: 1px;
 }
 
 hr{
-  border-color: #ccc;
+  border-color: #bad1e3;
 }
 
 
+.container-loging{
+  float:right;
+  background-color:transparent;
+  color:#333;
+  border-radius: 4px;
+  padding: 15px;
+
+  background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+  background-color: rgba(0, 0, 0, 0.4);
+    /* For IE 5.5 - 7*/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.container-loging a:hover{
+  color: #00b3f8;
+}
+
+
+/* Modal */
+
+.modal-header{
+  border-bottom: none;
+
+}
+
+.modal-body{
+  border: none;
+  
+}
+
+.modal-footer{
+  border: none;
+}
+
+@media(min-width: 1200px){
+.modal-dialog{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+}
+
+.vertical-line{
+  border: 1px solid #bfe0ec;
+}
+
+.pagination li a{
+  border:none;
+}
+
+/* End Modal Content */

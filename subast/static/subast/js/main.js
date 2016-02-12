@@ -2,6 +2,9 @@
 ** Initial Data will be replaced to data obtained from server (js or json)
 ***************************************************************************
 */
+
+
+
 var initialOrders = [
 	{
 		companyLogo: 'img/logos/grana.jpg',
@@ -455,8 +458,11 @@ var Sector = function( data ){
 var Date = function( data ){
 	var self = this;
 
-	this.name = ko.observable( data.name );
-	this.publications = ko.observable( data.publications );
+	// Por la presencia de las dos siguientes líneas no funciona el Model de Bootstrap, 
+	// es por ello que lo he dejado como comentario XD.
+
+	//this.name = ko.observable( data.name );
+	//this.publications = ko.observable( data.publications );
 };
 
 var ViewModel = function(){

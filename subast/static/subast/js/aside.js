@@ -49,3 +49,27 @@ $('.statistics:not(".active-li")').hover( function(){
 }, function(){
 	$('img', this).attr('src', 'img/25-Estadisticas-allwhite-36.png');
 });
+
+
+//Menús para el módulo de Ventas:
+
+$('.BuscarMenu:not(".active-li")').hover( function(){
+	$('img', this).attr('src', 'img/27-Cotizaciones-blue-36.png');
+}, function(){
+	$('img', this).attr('src', 'img/27-Cotizaciones-white-36.png');
+});
+
+$('.cotiVentas:not(".active-li")').hover( function(){
+	$('img', this).attr('src', 'img/27-Cotizaciones-blue-36.png');
+}, function(){
+	$('img', this).attr('src', 'img/27-Cotizaciones-white-36.png');
+});
+
+$('.cotiVentas:not(".active-li")').focus( function(){
+	$('img', this).attr('src', 'img/27-Cotizaciones-blue-36.png');
+});
+
+$('.cotiVentas:not(".active-li")').focusout( function(){
+	$('img', this).attr('src', 'img/27-Cotizaciones-white-36.png');
+});
+
