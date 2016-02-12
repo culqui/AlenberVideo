@@ -8,6 +8,39 @@ $('#myModal').on('shown.bs.modal', function () {
 */
 var initialOrders = [
 	{
+		companyLogo: 'img/logos/Antamina.png',
+		company: 'Compañia Minera Antamina S.A',
+		datePublish: 'Hoy',
+		place: 'Huari, Ancash',
+		payType: 'A 30 días ',
+		cotizations: 0,
+		isUrgent: false,
+		requirements: [
+			{
+				name: 'Motor electrico	',
+				quantity: 5,
+				technicalDetails: [
+					{
+						name: 'Potencia',
+						value: '150 HP'
+					},
+					{
+						name: 'Velocidad',
+						value: '1200 rpm'
+					},
+					{
+						name: 'Frecuencia',
+						value: '60 Hz'
+					}
+				]
+			}
+		],
+
+		comercialSpecifications: [
+		]
+	},
+
+	{
 		companyLogo: 'img/logos/grana.jpg',
 		company: 'Grupo Graña y Montero S.A',
 		datePublish: 'Hoy',

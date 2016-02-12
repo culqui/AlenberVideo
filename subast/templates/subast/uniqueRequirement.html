@@ -45,14 +45,11 @@
 
 				<div class="col-sm-9 ">
 					<div class="dim-header ">
-						<div class="vcenter logo-small pull-left">
-							<a href=""><img class="img-responsive  " src="{% static 'subast/img/logos/Antamina.png'%}"></a>
-						</div>						
+											
 					
 						<div class="vcenter pull-left margin-left10">
-							<span class="black20">Cotización para: Transformador en Aceite trifásico</span>
-							<div class="clear"></div>
-							<div class="black14">Cliente: <a href=""> <span class="blue13">Compañía Minera Anatamina</span></a></div>
+							<span class="black20">Nuevo requerimiento</span>
+							
 
 						</div>
 					</div>
@@ -119,7 +116,7 @@
 				<div class="clear"></div>
 
 
-				<form action="{% url 'order_publish' company.name %}" method="post">
+				<form action="{% url 'order_new_unique' company.name %}" method="post">
 				{% csrf_token %}
 
 				<div class="frame marginTop10">
@@ -239,6 +236,13 @@
 									<p id="new-technic-speciifcation-btn" data-bind="click: addTechnicalSpecification">+ característica<p/>
 								</div>
 							</div>
+
+							<div class="form-group margin-top-bot0">
+								<div class="col-sm-12">								
+									<textarea placeholder="Agregar otra descripción" cols="105"></textarea>									
+								</div>								
+							</div>
+
 						</div>
 
 
@@ -280,6 +284,12 @@
 							<div class="col-sm-8">
 								<p id="new-comercial-speciifcation-btn" data-bind="click: addComercialSpecification">+ característica<p/>
 							</div>
+						</div>
+
+						<div class="form-group margin-top-bot0">
+								<div class="col-sm-12">								
+									<textarea placeholder="Agregar otra descripción " cols="105"></textarea>									
+								</div>								
 						</div>
 					</div>
 				</div>

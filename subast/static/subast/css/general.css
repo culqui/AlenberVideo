@@ -704,3 +704,13 @@ padding:0px;
 	background-repeat:no-repeat;
 	background-position: center;
 }
+
+textarea{
+	border:none;
+}
+
+
+textarea:focus{
+	
+	outline:1px #e7eff6 solid;
+}

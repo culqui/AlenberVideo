@@ -249,6 +249,14 @@ hr{
 .container-loging a:hover{
   color: #00b3f8;
 }
+.white-header{
+  color: #fff;
+}
+
+.account-img-2{
+  max-width: 50px;
+}
+
 
 
 /* Modal */

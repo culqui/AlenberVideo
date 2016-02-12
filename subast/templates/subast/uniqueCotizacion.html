@@ -54,7 +54,7 @@
 						</div>						
 					
 						<div class="vcenter pull-left margin-left10">
-							<span class="black20">Cotización para: Transformador en Aceite trifásico</span>
+							<span class="black20">Cotización para: Motor eléctrico</span>
 							<div class="clear"></div>
 							<div class="black14">Cliente: <a href=""> <span class="blue13">Compañía Minera Anatamina</span></a></div>
 
@@ -159,20 +159,20 @@
 								<span class=" black16"  >Requerimiento:</span>
 							</div>
 							<div class="col-sm-8">
-								<span class="blue16">Transformador en Aceite Trifásico</span>
+								<span class="blue16">Motor eléctrico</span>
 							</div>
 						</div>
 
-						<div class="col-sm-4 col-sm-offset-3 marginTop20 ">
+						<div class="col-sm-4 col-sm-offset-3 marginTop35 ">
 							<span class="gris16 " >Solicitado</span>
 						</div>
-						<div class="col-sm-4 marginTop20">
+						<div class="col-sm-4 marginTop35">
 							<span class="black16 ">Propuesto</span>
 						</div>
 
 						<div class="clear"></div>
 
-						<div class="form-group marginTop10 row-eq-height" >
+						<div class="form-group marginTop10 row-eq-height " >
 							<div class="col-sm-3" >
 								<label class="control-label black14" for="requirement-quantity">Cantidad:</label>
 							</div>
@@ -180,13 +180,13 @@
 								<span class="gris14">5 Unidades</span>
 							</div>
 							<div class="col-sm-5">
-								<input id="requirement-quantity" class="form-control no-border focus-format" type="text" placeholder=" dsfsadfas">
+								<input id="requirement-quantity" class="form-control no-border focus-format" type="text" placeholder=" ">
 							</div>
 						</div>
 
-						<div class="form-group margin-top-bot0 row-eq-height"  >
+						<div class="form-group row-eq-height"  >
 							<div class="col-sm-3">
-								<label class="control-label gris14" for="requirement-place-region">Para entregar en:</label>
+								<label class="control-label " for="requirement-place-region">Para entregar en:</label>
 							</div>
 							<div class="col-sm-4 marginTop10">
 								<span class="gris14 ">Campamento Minero</span>
@@ -206,120 +206,164 @@
 							</div>
 						</div>
 
+						<div class="form-group row-eq-height  ">
+							<div class="col-sm-3">
+								<label class="control-label " for="requirement-date">Plazo máximo de entrega:</label>
+							</div>
+
+							<div class="col-sm-4 col-center " >
+								<span class="gris14">25 Mar 2015</span>
+							</div>
+
+							<div class="col-sm-5">
+								<input id="requirement-date" class="form-control no-border focus-format" type="date" placeholder="dd/mm/aaaa">
+							</div>
+						</div>
+
 						<div class="form-group ">
 							<div class="col-sm-3">
-								<label class="control-label gris14" for="requirement-date">Plazo máximo de entrega:</label>
+								<label class="control-label " for="requirement-date">Precio total:</label>
 							</div>
-							<div class="col-sm-3">
-								<input id="requirement-date" class="form-control no-border focus-format" type="date" placeholder="dd/mm/aaaa">
+
+							
+							<div class="col-sm-5 col-sm-offset-4">
+								<input id="requirement-date" class="form-control no-border focus-format" type="text" placeholder=" ">
 							</div>
 						</div>
 
 						<div class="marginTop40" data-bind="foreach: requirements" >
 
-							<label class="control-label black16">Detalles Técnicos</label>
+							
+							<div class="col-sm-6 padding-left0"> 
+								<label class="control-label black16 marginTop30" >Detalles Técnicos</label>
+							</div>
 
-							<div class="form-group margin-top-bot0">
-								<div class="col-sm-6">								
-									<input id="technical-specification-name" class="form-control no-border focus-format gris14" type="text" placeholder="Caracteristica técnica 1 ">									
+							<div class="col-sm-2  marginTop35 ">
+								<span class="gris16 " >Solicitado</span>
+							</div>
+							<div class="col-sm-2 marginTop35">
+								<span class="black16 ">Propuesto</span>
+							</div>
+
+							<div class="clear"></div>
+							
+
+							<div class="form-group marginTop30 row-eq-height">
+								<div class="col-sm-6 col-center">								
+									<span >Potencia</span>									
 								</div>
+
+								<div class="col-sm-2 col-center gris14">								
+									<span >150 HP</span>									
+								</div>
+
 								<div class="col-sm-2">
 									<input id="technical-specification-value" class="form-control no-border focus-format" type="text" placeholder="Valor">
 								</div>
 							</div>
 
-							<div class="form-group margin-top-bot0">
-								<div class="col-sm-6">								
-									<input id="technical-specification-name" class="form-control no-border focus-format gris14" type="text" placeholder="Caracteristica técnica 2 ">									
+							<div class="form-group row-eq-height">
+								<div class="col-sm-6 col-center ">								
+									<span >Velocidad</span>									
 								</div>
+
+								<div class="col-sm-2 gris14">								
+									<span >1200 rpm</span>									
+								</div>
+
 								<div class="col-sm-2">
 									<input id="technical-specification-value" class="form-control no-border focus-format" type="text" placeholder="Valor">
 								</div>
 							</div>
 
-							<div class="form-group margin-top-bot0">
-								<div class="col-sm-6">								
-									<input id="technical-specification-name" class="form-control no-border focus-format gris14" type="text" placeholder="Caracteristica técnica 3 ">									
+							<div class="form-group row-eq-height ">
+								<div class="col-sm-6 col-center ">								
+									<span >Frecuencia</span>									
 								</div>
-								<div class="col-sm-2 ">
+
+								<div class="col-sm-2 gris14">								
+									<span >60 Hz</span>									
+								</div>
+
+								<div class="col-sm-2">
 									<input id="technical-specification-value" class="form-control no-border focus-format" type="text" placeholder="Valor">
 								</div>
+							</div>							
+						</div>
+
+						<div class="form-group marginTop30 row-eq-height" >		
+								<div class="col-sm-6  gris14" >								
+									<span> Se requiere este transformador para uso en campamento minero a 3000 msnm </span>								
+								</div>	
+
+								<div class="col-sm-6">								
+									<textarea placeholder="Agregar otra descripción técnica" cols="48"></textarea>										
+								</div>								
+						</div>
+
+
+						<div class="margintop40"></div>
+
+							<div class="col-sm-6 padding-left0 "> 
+									<label class="control-label black16 marginTop30" >Detalles Comerciales</label>
 							</div>
 
-							<div id="tecnic-specification" data-bind="foreach: technicalDetails">
+							<div class="col-sm-2  marginTop35 ">
+								<span class="gris16 " >Solicitado</span>
+							</div>
+							<div class="col-sm-2 marginTop35">
+								<span class="black16 ">Propuesto</span>
+							</div>
 
-								<!-- <template id="tecnic-template"> -->
-								<div class="form-group margin-top-bot0">
-									<div class="col-sm-6">
-										<input id="technical-specification-name" class="form-control no-border focus-format" type="texto" data-bind="attr: { value: $data.name, placeholder: 'Característica técnica ' + ( $index() + 4 ), id: 'technical-specification-name-' + ( $index() )}">
-									</div>
+							<div class="clear"></div>
 
-									<div class="col-sm-2">
-										<input id="technical-specification-value" class="form-control no-border focus-format" type="texto" placeholder="valor" data-bind="attr: { id: 'technical-specification-value-' + ( $index() )}">
-									</div>
+							<div class="form-group  row-eq-height marginTop30">
+
+								<div class="col-sm-6 ">
+									<label class="control-label  " for="pay-type">Tipo Pago:</label>
 								</div>
-								<!-- </template> -->
-							</div>
-
-							<div class="form-group form-group-sm">
-								<div class="col-sm-8">
-									<p id="new-technic-speciifcation-btn" data-bind="click: addTechnicalSpecification">+ característica<p/>
-								</div>
-							</div>
-						</div>
-
-
-						<label class="control-label black16 marginTop30">Detalles Comerciales</label>
-
-						<div class="form-group margin-top-bot0">
-							<div class="col-sm-6 ">
-								<label class="control-label gris14" for="pay-type">Tipo Pago:</label>
-							</div>
-							<div class="col-sm-3">
-								<input id="pay-type" class="form-control no-border focus-format" type="text" placeholder=" ">
-							</div>
-						</div>
-
-						<div class="form-group margin-top-bot0">
-							<div class="col-sm-6">
-								<label class="control-label gris14" for="garanty">Garantía:</label>
-							</div>
-							<div class="col-sm-3">
-								<input id="garanty" class="form-control no-border focus-format" type="text" placeholder=" ">
-							</div>
-						</div>
-
-						<div id="comercial-specification" data-bind="foreach: comercialSpecifications">
-
-							<!-- <template id="comercial-template"> -->
-							<div class="form-group margin-top-bot0 ">
-								<div class="col-sm-6">
-									<input data-bind="attr: { placeholder: 'Característica comercial ' + ( $index() + 1 ), id: 'comercial-specification-name-' + ( $index() )}" id="comercial-specification-name" class="form-control no-border focus-format gris14" type="texto">
+								<div class="col-sm-2 col-center gris14">								
+									<span >A 30 días</span>									
 								</div>
 								<div class="col-sm-2">
-									<input data-bind="attr: { id: 'comercial-specification-value-' + ( $index() ) }"id="comercial-specification-value" class="form-control no-border focus-format" type="texto" placeholder="valor">
+									<input id="pay-type" class="form-control no-border focus-format" type="text" placeholder=" ">
 								</div>
 							</div>
-							<!-- </template> -->
-						</div>
 
-						<div class="form-group ">
-							<div class="col-sm-8">
-								<p id="new-comercial-speciifcation-btn" data-bind="click: addComercialSpecification">+ característica<p/>
+							<div class="form-group row-eq-height margin-top-bot0">
+								<div class="col-sm-6 ">
+									<label class="control-label  " for="pay-type">Garantía:</label>
+								</div>
+								<div class="col-sm-2 col-center gris14">								
+									<span >2 años</span>									
+								</div>
+								<div class="col-sm-2">
+									<input id="pay-type" class="form-control no-border focus-format" type="text" placeholder=" ">
+								</div>
 							</div>
-						</div>
+
+
+							<div class="form-group marginTop30 row-eq-height" >		
+								<div class="col-sm-6 col-center  gris14" >								
+									<span> El requerimiento incluirá el servicio de instalación </span>								
+								</div>	
+
+								<div class="col-sm-6">								
+									<textarea placeholder="Agregar otra descripción " cols="48"></textarea>									
+								</div>								
+							</div>
+
+
+						</div>						
+
+						
 					</div>
 				</div>
 
-				<div class="col-sm-12 marginTop20 ">				    	
-		    		<button class="urgente gris16 pull-right">
-			    		URGENTE
-			    		<img class="img-responsive float-left margin-left5 margin-right5" src="{% static 'subast/img/87-tanpon.png' %}" onmouseover="this.src='{% static 'subast/img/87-tanpon-red.png' %}'" onmouseout="this.src='{% static 'subast/img/87-tanpon.png' %}'">
-		    		</button>			    	
-			  	</div>
+				<div class="clear"></div>
 
 				<div class="form-group marginTop40">
-					<div class="col-sm-12">
+					<div class="col-sm-10">
 						<button class="button-orange center-block btn width180">
 							<img clas="img-responsive margin-left5 " src="{% static 'subast/img/106-Publicar.png' %}">
 							<span class="white14">Publicar</span>

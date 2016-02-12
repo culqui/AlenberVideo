@@ -12,12 +12,13 @@
 
 	<meta name="description" content="">
 
+	<link href="{% static 'subast/css/normalize.css' %}" rel="stylesheet">
+
 	<link href="{% static 'subast/css/bootstrap.min.css' %}" rel="stylesheet">
 	<link href="{% static 'subast/css/bootstrap-theme.min.css' %}" rel="stylesheet">
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,500,400italic,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-	<link href="{% static 'subast/css/normalize.css' %}" rel="stylesheet">
 	<link href="{% static 'subast/css/main.css' %}" rel="stylesheet">
 
 	<link href="{% static 'subast/css/general.css' %}" rel="stylesheet">
@@ -45,7 +46,7 @@
 					<div class="row row-eq-height">
 						<div class="col-md-9 col-sm-6 text-center col-center" >				
 							<div>
-								<h2 class="white36">Publica lo que requieres y encuentra a tus proveedores</h2>
+								<h1>Publica lo que requieres y encuentra a tus proveedores</h1>
 							</div>
 							<br>
 
@@ -54,7 +55,7 @@
 									<div class="step-tamano center-block hidden-xs">
 										<img class="img-responsive center-block" src="{% static 'subast/img/1-Pub-Req-68-white.png'%}">
 									</div>
-									<h4 class="white16">1. Publica tu requerimiento en Alenber.com</h4>
+									<h4>1. Publica tu requerimiento en Alenber.com</h4>
 								</div>
 								<div class="col-md-1 col-center hidden-sm hidden-xs">
 									<img class="img-responsive center-block" src="{% static 'subast/img/102-Siguiente-white-30.png' %}">
@@ -63,7 +64,7 @@
 									<div class="step-tamano center-block hidden-xs">
 										<img class="img-responsive center-block" src="{% static 'subast/img/2-Recibir-Cotizacion-68-white.png' %}">
 									</div>
-									<h4 class="white16">2. Recibe cotizaciones de diferentes proveedores</h4>
+									<h4>2. Recibe cotizaciones de diferentes proveedores</h4>
 								</div>
 								<div class="col-md-1 col-center hidden-sm hidden-xs">
 									<img class="img-responsive center-block" src="{% static 'subast/img/102-Siguiente-white-30.png' %}">
@@ -72,45 +73,87 @@
 									<div class="step-tamano center-block hidden-xs">
 										<img class="img-responsive center-block" src="{% static 'subast/img/3-Sel-MejorCotiza-68-white.png'%}">
 									</div>
-									<h4 class="white16">3. Selecciona la mejor cotización</h4>
+									<h4>3. Selecciona la mejor cotización</h4>
 								</div>
 							</div>								
 						</div>					
 
 						<div class="col-md-3 col-lg-3 col-sm-6 col-center padding-top10 padding-bottom10" >
-	                        <div class="container-loging">
-	                            <p class="white16">Iniciar cesi&oacute;n</p>
-	                            <div class="row">
-	                                <div class="col-md-12">
-	                                    <form action="" method="get" >                 
-	                                        <input type="email" class="form-control padding-left5" id="email" placeholder="Ingrese email" />                                
-	                                    </form>
-	                                </div>
-	                                
-	                                <div class="col-lg-7 col-sm-12 col-md-12 col-xs-12 " >
+							<div class="container-loging">
+								{% if not company %}
+								<form method ="POST" action="">
+									{% csrf_token %}
+									<p class="white16">Iniciar sesión</p>
+		                            <div class="row">
+		                                <div class="col-md-12">
+		                                    <input type="email" class="form-control padding-left5" id="email" name="email" placeholder="Ingrese email" />
+		                                </div>
+		                                
+		                                <div class="col-lg-7 col-sm-12 col-md-12 col-xs-12 " >
 
-	                                    <form class="marginTop10 marginBot10" action="" method="get">
-	                                        <input type="password" class="form-control padding-left5" id="pwd" placeholder="Contrase&ntilde;a"/>                                
-	                                    </form>
-	                                </div>
+		                                    <div class="marginTop10 marginBot10" action="" method="get">
+		                                        <input type="password" class="form-control padding-left5" id="pwd" placeholder="Contraseña"/>                                
+		                                    </div>
+		                                </div>
 
-	                                <div class="col-lg-5 col-sm-12 col-md-12 col-xs-12 padding-left0" >
-	                                    <button id="ingresar" class="btn padding-left6   marginTop10 marginBot10 button-blue width100 text-center center-block">
-	                                        <div class="block">
-	                                            <p class="float-left white14">Ingresar</p>
-	                                            <img class="float-left padding-left3" src="{% static 'subast/img/12-Open-door-white.png' %}" align="middle">
-	                                        </div>
-	                                    </button>
-	                                </div>
-	                            </div>
+		                                <div class="col-lg-5 col-sm-12 col-md-12 col-xs-12 padding-left0" >
+		                                    <button id="ingresar" class="btn padding-left6   marginTop10 marginBot10 button-blue width100 text-center center-block">
+		                                        <div class="block">
+		                                            <p class="float-left white14">Ingresar</p>
+		                                            <img class="float-left padding-left3" src="{% static 'subast/img/12-Open-door-white.png' %}" align="middle">
+		                                        </div>
+		                                    </button>
+		                                </div>
+		                            </div>
 
-	                            <div class="clear"></div>
-	                            <a href=" " class="blue14">&iquestOlvidaste tu contrase&ntilde;a?</a>
-	                        </div>  
-	                    
+		                            <div class="clear"></div>
+		                            <a href=" " class="blue14">¿Olvidaste tu contraseña?</a>
+	                        	</form>
+
+	                        	{% else %}
+
+	                        		<div class="row">
+	                        			<div class=" text-center text-uppercase col-sm-12">
+	                        				{% if company.name == 'antamina' %}
+	                        				<h4 class="white-header">Comprador</h4>
+	                        				{% else %}
+	                        				<h4 class="white-header">Proveedor</h4>
+	                        				{% endif %}
+	                        			</div>
+	                        		</div>
+
+	                        		<div class="row">
+	                        			<div class="col-sm-offset-2 col-sm-4">
+											<img class="thumbnail img-responsive block-center" src="{% get_media_prefix %}{{company.logo}}">
+										</div>
+
+										<div class="col-sm-4">
+											<img class="img-circle img-responsive block-center" src="{% static 'subast/img/32-Menu-Right-36-white.png' %}">
+										</div>
+	                        		</div>
+
+	                        		<div class="row">
+	                        			<div class="col-sm-offset-2 col-sm-4">
+											<h3 class="white-header text-uppercase text-center">Elias</h3>
+										</div>
+
+										<div class="col-sm-4">
+											<img class="img-circle account-img-2 block-center" src="{% static 'subast/img/pictures/Elias.jpg'%}">
+										</div>
+	                        		</div>
+
+	                        		<div class="row">
+	                        			<div class="col-sm-offset-4 col-sm-6">
+	                        				<h4 class="white-header">Cerrar Sesión</h4>
+	                        			</div>
+	                        		</div>
+	                            {% endif %}
+	                        </div>
+
+	                        {% if not company %}
 	                        <div class="container-loging marginTop15">                
 	                            <div class="no_registrado">
-	                                <p class="white16">&iquestTodav&iacutea no est&aacutes registrado?</p>
+	                                <p class="white16">¿Todavía no estas registrado?</p>
 	                            </div>
 	                            <button type="button" id="registra-empresa" class="center-block btn background-blue marginTop10 marginBot10 width100 button-blue" data-toggle="modal" data-target="#myModal">
 	                                <div class="block">
@@ -205,6 +248,7 @@
 	                            <span class="white14" >Si tu empresa est&aacute registrada:</span>         
 	                            <a href=" " class="blue-light14">Crear nuevo usuario</a>
 	                        </div>
+	                        {% endif %}
 	               		</div>
 					</div>
 				</div>
@@ -218,11 +262,15 @@
                         <div class="row" >
                             <div class="col-sm-2">
                             </div>
-                            <div class="col-sm-10" >
-                                
-                                    <a href="newRequirement.html"><button class="width100 btn button-publicar "><img class="image-button" src="{% static 'subast/img/5-Pub-Req--24-white-px.png'%}"><span class="white18"> Publicar requerimiento</span></button></a>
-                               
-                            </div>
+                            {% if company %}
+							<div class="col-sm-10">
+								<a href="{% url 'order_new' company.name%}"><button class=" width100 btn btn-warning button-publicar"><img class="image-button" src="{% static 'subast/img/5-Pub-Req--24-white-px.png' %}"> <span class="white18">Publicar requerimiento</span></button></a>
+							</div>
+							{% else %}
+							<div class="col-sm-10">
+								<a href="#"><button class="width100 btn btn-warning button-publicar"><img class="image-button" src="{% static 'subast/img/5-Pub-Req--24-white-px.png' %}"> <span class="white18">Publicar requerimiento</span></button></a>
+							</div>
+							{% endif %}
                         </div>
                     </div>
 
@@ -243,6 +291,7 @@
 
 	<div class="container-fluid">
 		<div class="row">
+
 			<div class="col-sm-offset-2 col-sm-7">
 				<ul class="list-unstyled list-margin" data-bind="foreach: orderList">
 					<li>
@@ -327,7 +376,7 @@
 									</div>
 
 									<div class="col-xs-12 col-sm-3">
-										<a data-bind="attr: { href: 'orders/' + $index() }" class="btn btn-default btn-cotization"><span><img src="{% static 'subast/img/6-Pub-Req-36.png' %}"> Enviar Cotización</span></a>
+										<a data-bind="attr: { href: 'orders/' + $index() + '/cotizacion/new' }" class="btn btn-default btn-cotization"><span><img src="{% static 'subast/img/6-Pub-Req-36.png' %}"> Enviar Cotización</span></a>
 									</div>
 								</div>
 
@@ -429,7 +478,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{% static 'subast/js/knockout-3.4.0.js' %}"></script>
+
+    {% if cheat %}
+    <script src="{% static 'subast/js/main2.js' %}"></script>
+    {% else %}
 	<script src="{% static 'subast/js/main.js' %}"></script>
+	{% endif %}
 
     
     <script src="{% static 'subast/js/plugins.js' %}"></script>
